@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import CircularText from "../../assets/Abraham.svg"
 import Blessme from "../../assets/blessme.png"
 
 const Hero = () => {
+    const [isHover, setHover] = useState(false)
   return (
     <section className='heroSection'>
         <div className="container">
@@ -12,9 +13,9 @@ const Hero = () => {
                     FRONTEND DEVELOPER
                 </h3>
 
-                <div className="circularTextWrapper">
-                <img className='circularText' src={CircularText} alt="circular text" />
-                <img className='avatarImg' src={Blessme} alt="abraham" />
+                <div className="circularTextWrapper"  >
+                <img className='circularText' src={CircularText} onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)} alt="circular text" />
+                <img className='avatarImg' style={ { filter: isHover ? "grayscale(0%)" : "grayscale(100%)"}} src={Blessme} alt="abraham" />
                 </div>
                 </div>
 
