@@ -1,7 +1,7 @@
 
+import { gsap, Power3 } from "gsap";
 // import Splitting from "splitting";
 // import { IO } from "./observe";
-// import { gsap, Power3 } from "gsap";
 
 // export const split = () => {
 //   const n = document.querySelector(".notFound404")
