@@ -4,6 +4,7 @@ import Hero from './Hero'
 import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
+import MobileProjects from './MobileProjects'
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
         <Hero />
         <About />
         <Projects />
+        <MobileProjects />
         <Contact />
     </div>
    

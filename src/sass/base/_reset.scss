@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   background: $bodyBackground;
   color: $textColor;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -33,6 +34,12 @@ h3 {
   line-height: 0.8;
   letter-spacing: -10px;
   text-transform: uppercase;
+
+  @include responsive($max-width: $layout-breakpoint-medium) {
+    letter-spacing: 0;
+    font-size: calc($titleSize * 1.2);
+    line-height: 1;
+}
 }
 
 h4 {

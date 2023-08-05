@@ -6,8 +6,8 @@ const About = () => {
         <div className="container">
         <div className='sectionHeading'>About Me</div>
 
-        <h4 className='aboutText'>
-            I am a frontend developer with a specialization in improving web performance, conversion rate optimization, and search engine optimization (SEO). With a keen eye for detail and a passion for delivering exceptional user experiences, I excel at creating fast, efficient, and conversion-focused websites that rank highly in search engine results.
+        <h4 className='aboutText' data-animation="paragraph">
+            I am a frontend developer with a specialization in improving web performance and search engine optimization (SEO). With a keen eye for detail and a passion for delivering exceptional user experiences, I excel at creating fast and conversion-focused websites that rank highly in search engine results.
         </h4>
         </div>
     </section>

@@ -42,7 +42,7 @@ const Projects = () => {
     <div className="sectionHeading projectSectionHeading">Projects</div>
     </div>
     <div className="projects">
-  <Project image={project1} projectTitle="Tiidelab Fellows" projectLink="https://blessmetodowithreact.netlify.app/"/>
+  <Project image={project1} projectTitle="Tiidelab Fellows" projectLink="https://tiidelabcohort4.netlify.app/"/>
   <div className="divider" />
 
   <Project image={project2} projectTitle="Payment Integration App" projectLink="https://instantpay-blessme.netlify.app/"/>
