@@ -42,13 +42,13 @@ const Projects = () => {
     <div className="sectionHeading projectSectionHeading">Projects</div>
     </div>
     <div className="projects">
+  <Project image={project3} projectTitle="E-Commerce Website" projectLink="https://audiophile-ecommerce-247.vercel.app/"/>
   <Project image={project1} projectTitle="Tiidelab Fellows" projectLink="https://tiidelabcohort4.netlify.app/"/>
   <div className="divider" />
 
   <Project image={project2} projectTitle="Payment Integration App" projectLink="https://instantpay-blessme.netlify.app/"/>
   <div className="divider" />
 
-  <Project image={project3} projectTitle="Fullstack Todo App" projectLink="https://blessmetodowithreact.netlify.app/"/>
   <div className="divider" />
 </div>
 

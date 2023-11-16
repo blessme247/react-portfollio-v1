@@ -16,9 +16,9 @@ const MobileProjects = () => {
             <p className='projectTitle'>TiideLab</p>
             <p className="projectYear">2022</p>
             </Link>
-            <Link className="project" target="blank" to="https://blessmetodowithreact.netlify.app/"> 
-            <p className='projectTitle'>Todo App</p>
-            <p className="projectYear">2022</p>
+            <Link className="project" target="blank" to="https://audiophile-ecommerce-247.vercel.app/"> 
+            <p className='projectTitle'>E-Commerce Website</p>
+            <p className="projectYear">2023</p>
             </Link>
         </div>
 

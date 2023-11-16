@@ -23,6 +23,11 @@ section {
   text-transform: uppercase;
 }
 
+span.word_wrap {
+  overflow: hidden;
+  display: inline-block;
+}
+
 .pageWrapper {
   .heroSection {
     @include responsive($max-width: $layout-breakpoint-small) {
@@ -106,6 +111,8 @@ section {
       width: 60%;
       margin-left: auto;
       line-height: 1.5;
+      // line-height: toRem(26);
+      overflow: hidden;
       @include responsive($max-width: $layout-breakpoint-small) {
         width: 100%;
     }

@@ -64,3 +64,8 @@ button {
     border: none;
     outline: none;
 }
+
+span.word_wrap {
+  overflow: hidden;
+  display: inline-block;
+}
