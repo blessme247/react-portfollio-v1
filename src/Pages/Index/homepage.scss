@@ -2,6 +2,12 @@
 @import "../../sass/components/global";
 @import "../../sass/abstracts/mixins";
 
+// For split texts
+.char {
+  transform: translateY(315px);
+  transition: transform .5s;
+  // border: 1px solid red;
+}
 
 .container {
   width: 1500px;
@@ -36,7 +42,7 @@ span.word_wrap {
   }
     
     .heroContent {
-      padding-top: 8rem;
+      padding-top: 6.5rem;
 
       .top {
         @extend %flex;
@@ -44,8 +50,9 @@ span.word_wrap {
           flex-direction: column;
       }
 
-        h3 {
+        h3 {  
           width: 70%;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           @include responsive($max-width: $layout-breakpoint-small) {
             width: 100%;
         }
@@ -82,16 +89,12 @@ span.word_wrap {
             justify-content: center;
             width: 180px;
             transition: all 0.3s ease-in-out;
-            // left: 50%;
-            // top: 50%;
-            // transform: translateX(-50%);
-            // transform: translateY(-50%);
           }
         }
       }
 
       .bottom {
-        margin-top: 8rem;
+        margin-top: 6rem;
         p {
           text-transform: uppercase;
           font-size: 1.6rem;
@@ -376,4 +379,4 @@ span.word_wrap {
   0% {
     transform: rotate(360deg);
   }
-}
+}     

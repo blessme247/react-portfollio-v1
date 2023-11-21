@@ -3,7 +3,7 @@ import "./homepage.scss"
 import Hero from './Hero'
 import About from './About'
 import Projects from './Projects'
-import Contact from './Contact'
+// import Contact from './Contact'
 import MobileProjects from './MobileProjects'
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
         <About />
         <Projects />
         <MobileProjects />
-        <Contact />
+        {/* <Contact /> */}
     </div>
    
   )

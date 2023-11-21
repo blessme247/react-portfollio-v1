@@ -4,40 +4,67 @@ import Blessme from "../../assets/blessme.png";
 import { gsap, Power3 } from "gsap";
 
 const Hero = () => {
- 
-    // useEffect(() => {
-    //     let tl = gsap.timeline();
+  useEffect(() => {
     
-    //     tl.from(".heroSection", {
-    //       opacity: 0,
-    //     })
-    //       .to(".heroSection", {
-    //         opacity: 1,
-    //         delay: 0.3,
-    //         duration: 1.5,
-    //         ease: Power3.bounce,
-    //         transformStyle: "preserve-3d",
-    //       }).set(".circularTextWrapper img", {
-    //         scale: 1.5
-    //       }).to(".circularTextWrapper img", {
-    //         scale: 1,
-    //         duration: 0.5,
-    //         // ease: Power3.bounce
-    //       })
-    
-    //     // Cleanup function
-    //     return () => {
-    //       tl.kill(); // Optional: Kill the timeline on component unmount
-    //     };
-    //   }, []);
+    let tl = gsap.timeline();
+
+    tl.fromTo(".heroContent", {
+      opacity: 0,
+      duration: 1,
+    },{
+      opacity: 1,
+      duration: 1,
+      ease: Power3.bounce,
+    })
+      .from(
+        ".top h3",
+        {
+          duration: 0.7,
+          yPercent: 100,
+          stagger: {
+            amount: 0.05,
+          },
+          opacity: 0, 
+          ease: "power4.out",
+        }
+        )
+      .from(
+        ".circularTextWrapper",
+        {
+          opacity: 0,
+          scale: 1.2,
+          ease: "power4.out" 
+        }
+      )
+      .to(
+        ".circularTextWrapper",
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.5,
+          ease: "power4.out" 
+        },
+        "<"
+      ).from(".bottom p", {
+        y: -5,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power4.in"
+      },)
+
+    // Cleanup function
+    return () => {
+      tl.kill(); // Optional: Kill the timeline on component unmount
+    };
+  }, []);
 
   const [isHover, setHover] = useState(false);
   return (
     <section className="heroSection">
       <div className="container">
         <div className="heroContent">
-          <div className="top" >
-            <h3 data-animation="headerDelayed">FRONTEND DEVELOPER</h3>
+          <div className="top">
+            <h3 data-splitting="words">FRONTEND DEVELOPER</h3>
 
             <div className="circularTextWrapper">
               <img
