@@ -49,7 +49,7 @@ const Hero = () => {
         y: -5,
         opacity: 0,
         duration: 0.7,
-        ease: "power4.in"
+        ease: "power4.out"
       },)
 
     // Cleanup function
