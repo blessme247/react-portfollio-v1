@@ -112,7 +112,7 @@ const Contact = () => {
             </Link>
             <Link
               className="socialLink"
-              to="https://twitter.com/blessme_xo"
+              to="https://twitter.com/lifeofblessme"
               target="_blank"
             >
               Twitter{" "}
