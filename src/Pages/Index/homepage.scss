@@ -116,7 +116,7 @@ span.word_wrap {
   }
 
   .aboutSection {
-    height: 70vh;
+    height: 100%;
     @include responsive($max-width: $layout-breakpoint-small) {
       height: fit-content;
       padding-bottom: 2rem;
@@ -269,6 +269,7 @@ span.word_wrap {
   }
 
   .contactSection {
+    height: 100%;
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
