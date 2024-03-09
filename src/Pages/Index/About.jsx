@@ -1,10 +1,10 @@
-import React from "react";
+
 
 const About = () => {
   return (
     <section className="aboutSection">
       <div className="container">
-        <div className="sectionHeading">About Me</div>
+        <div className="sectionHeading text__reveal">About Me</div>
 
         <p className="aboutText" data-animation="paragraph">
           I am a frontend developer with a specialization in improving web

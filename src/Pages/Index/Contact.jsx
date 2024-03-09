@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import SpotifyLogo from "../../assets/spotify.svg";
 import { Link } from "react-router-dom";
 import getNowPlayingItem from "../../utils/spotify";
@@ -10,7 +10,6 @@ const Contact = () => {
 
   useEffect(() => {
     Promise.all([getNowPlayingItem()]).then((results) => {
-      console.log(results);
       const songData = {
         artist: results[0].artist,
         title: results[0].title,

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./homepage.scss"
 import Hero from './Hero'
 import About from './About'

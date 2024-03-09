@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import CircularText from "../../assets/Abraham.svg";
 import Blessme from "../../assets/blessme.png";
 import { gsap, Power3 } from "gsap";

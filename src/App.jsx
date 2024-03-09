@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Index from "./Pages/Index/Index"
-scroll()
 
 function App() {
+
 
 
   return (
