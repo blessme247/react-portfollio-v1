@@ -50,6 +50,7 @@ span.word_wrap {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
   .heroSection {
     height: 100%;
     display: flex;
@@ -149,6 +150,9 @@ span.word_wrap {
       overflow: hidden;
       @include responsive($max-width: $layout-breakpoint-small) {
         width: 100%;
+        text-wrap: balance;
+        align-items: center;
+        font-size: 1.4rem;
     }
     }
   }
@@ -290,13 +294,13 @@ span.word_wrap {
   }
 
   .contactSection {
-    height: 90%;
+    height: 100%;
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     @include responsive($max-width: $layout-breakpoint-small) {
-      height: 85%;
+      height: 90%;
   }
 
     .top {
