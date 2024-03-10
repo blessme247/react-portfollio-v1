@@ -266,7 +266,7 @@ span.word_wrap {
     display: none;
     @include responsive($max-width: $layout-breakpoint-small) {
       display: block;
-      height: 70%;
+      height: 80%;
   }
     .projects {
       margin-top: 2rem;
@@ -300,7 +300,7 @@ span.word_wrap {
     flex-direction: column;
     justify-content: space-between;
     @include responsive($max-width: $layout-breakpoint-small) {
-      height: 90%;
+      height: 95%;
   }
 
     .top {
