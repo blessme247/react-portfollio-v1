@@ -6,7 +6,6 @@
 .char {
   transform: translateY(315px);
   transition: transform .5s;
-  // border: 1px solid red;
 }
 
 .text__reveal  {
@@ -146,7 +145,6 @@ span.word_wrap {
       width: 60%;
       margin-left: auto;
       line-height: 1.5;
-      // line-height: toRem(26);
       overflow: hidden;
       @include responsive($max-width: $layout-breakpoint-small) {
         width: 100%;
@@ -201,7 +199,6 @@ span.word_wrap {
             height: 100%;
             top: 0;
             left: 0;
-            // background-color: #dfdbd5;
             background-color: transparent;
             transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
           }
@@ -249,12 +246,7 @@ span.word_wrap {
         }
       }
 
-    //   .divider {
-    //     position: relative;
-    //     width: 1px;
-    //     height: 100vh;
-    //     background: $textColor;
-    //   }
+
     }
 
     
@@ -333,8 +325,6 @@ span.word_wrap {
       }
 
       .contactEmailLinkWrapper {
-        // padding-top: 4rem;
-        // width: 50%;
         @include responsive($max-width: $layout-breakpoint-xsmall) {
           display: flex;
           align-items: center;
