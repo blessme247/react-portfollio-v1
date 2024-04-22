@@ -13,26 +13,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
 
-  //   const component = useRef(null);
-  // const slider = useRef(null);
-
-  // useLayoutEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     let projectLinks = gsap.utils.toArray(".projectLink");
-  //     gsap.to(projectLinks, {
-  //       xPercent: -100 * (projectLinks.length - 1),
-  //       ease: "none",
-  //       scrollTrigger: {
-  //         trigger: component.current,
-  //         pin: true,
-  //         scrub: 1,
-  //         snap: 1 / (projectLinks.length - 2),
-  //         end: () => "+=" + slider.current.offsetWidth
-  //       }
-  //     });
-  //   }, component);
-  //   return () => ctx.revert();
-  // });
 
 
   return (
