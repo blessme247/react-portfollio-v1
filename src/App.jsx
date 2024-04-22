@@ -6,12 +6,10 @@ function App() {
 
 
   return (
-    <>
      <Routes> 
        <Route path="/" element={<Index/>}/> 
       
      </Routes> 
-    </>
   )
 }
 
