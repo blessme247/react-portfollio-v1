@@ -1,5 +1,4 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
-import { Link } from 'react-router-dom'
 import { gsap } from 'gsap';
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -12,8 +11,6 @@ import Project from "../../Components/Project/Project";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
-
-
 
   return (
   <section className="projectsSection" >
