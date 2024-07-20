@@ -4,6 +4,9 @@ import Blessme from "../../assets/blessme.png";
 import { gsap, Power3 } from "gsap";
 
 const Hero = () => {
+
+  const [isHover, setHover] = useState(false);
+  
   useEffect(() => {
     
     let tl = gsap.timeline();
@@ -58,7 +61,7 @@ const Hero = () => {
     };
   }, []);
 
-  const [isHover, setHover] = useState(false);
+  
   return (
     <section className="heroSection">
       <div className="container">

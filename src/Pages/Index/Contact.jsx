@@ -3,6 +3,7 @@ import SpotifyLogo from "../../assets/spotify.svg";
 import { Link } from "react-router-dom";
 import getNowPlayingItem from "../../utils/spotify";
 import SpotifyAnimatedBars from "../../Components/Spotify/SpotifyAnimatedBars";
+import arrowIcon from "../../assets/arrow.svg"
 
 const Contact = () => {
   const [loading, setLoading] = useState(true);
@@ -18,7 +19,7 @@ const Contact = () => {
 
       setSong(songData);
 
-      if (results[0].isPlaying == true) {
+      if (results[0].isPlaying) {
         setLoading(false);
       } else {
         setLoading(true);
@@ -32,41 +33,7 @@ const Contact = () => {
         <p className="callToWork">Let's work </p>
         <div className="flexCallToWork">
           <p className="callToWork">together </p>
-          <svg
-            width="18px"
-            height="18px"
-            viewBox="0 0 18 18"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <title>arrow-up-right</title>
-            <g
-              id="Page-1"
-              stroke="none"
-              stroke-width="1"
-              fill="none"
-              fill-rule="evenodd"
-            >
-              <g
-                id="Artboard"
-                transform="translate(-1019.000000, -279.000000)"
-                stroke="#aaa"
-                stroke-width="1.5"
-              >
-                <g
-                  id="arrow-up-right"
-                  transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)"
-                >
-                  <polyline
-                    id="Path"
-                    points="2.76923077 0 12 0 12 9.23076923"
-                  ></polyline>
-                  <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
-                </g>
-              </g>
-            </g>
-          </svg>
+          <img src={arrowIcon} alt="arrow" />
         </div>
 
         <div className="horizontalLine"></div>

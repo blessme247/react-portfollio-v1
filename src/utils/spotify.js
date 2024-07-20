@@ -25,8 +25,8 @@ const getAccessToken = async () => {
 };
 
 // now playing endpoint
-export const getNowPlaying = async (client_id, client_secret, refresh_token) => {
-  const { access_token } = await getAccessToken(client_id, client_secret, refresh_token);
+export const getNowPlaying = async () => {
+  const { access_token } = await getAccessToken();
   return fetch(NOW_PLAYING_ENDPOINT, {
       headers: {
           Authorization: `Bearer ${access_token}`,
@@ -36,9 +36,8 @@ export const getNowPlaying = async (client_id, client_secret, refresh_token) => 
 
 // return data
 export default async function getNowPlayingItem(
-  client_id, client_secret, refresh_token
 ) {
-  const response = await getNowPlaying(client_id, client_secret, refresh_token);
+  const response = await getNowPlaying();
   if (response.status === 204 || response.status > 400) {
       return false;
   }

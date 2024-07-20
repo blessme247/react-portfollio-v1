@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 const Project = ({image, projectTitle, projectLink }) => {
   return (
@@ -13,5 +14,11 @@ const Project = ({image, projectTitle, projectLink }) => {
   </div>
   )
 }
+
+Project.propTypes = {
+  image: PropTypes.string.isRequired,
+  projectTitle: PropTypes.string.isRequired,
+  projectLink: PropTypes.string.isRequired,
+};
 
 export default Project
