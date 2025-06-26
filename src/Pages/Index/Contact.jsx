@@ -28,7 +28,7 @@ const Contact = () => {
   }, [song]);
 
   return (
-    <section className="contactSection">
+    <section className="contactSection section">
       <div className="top">
         <p className="callToWork">Let's work </p>
         <div className="flexCallToWork">

@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 
-section {
+.section {
   height: 100%;
   width: 100%;
 }
@@ -255,21 +255,22 @@ span.word_wrap {
   }
 
   .mobileProjectsSection {
-    display: none;
+    // display: none;
     @include responsive($max-width: $layout-breakpoint-small) {
-      display: block;
-      height: 80%;
+      // display: block;
+      // height: 80%;
   }
     .projects {
       margin-top: 2rem;
 
       .project{
         @extend %flex;
-        border-top: 1px solid #eee;
+        // border-top: 1px solid #eee;
+        border-bottom: 0.5px solid #eee;
         padding: 1.5rem 0;
-        &:nth-last-child(1){
-          border-bottom: 1px solid #eee;
-        }
+        // &:nth-last-child(1){
+        //   border-bottom: 1px solid #eee;
+        // }
 
         .projectTitle {
           text-transform: uppercase;
