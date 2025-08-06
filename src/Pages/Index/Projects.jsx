@@ -37,7 +37,7 @@ const Projects = () => {
 <div className="container">
     <div className="sectionHeading projectSectionHeading text__reveal">Projects</div>
         <div className="projects">
-                      <Link className="project" target="blank" to="https://karashijewelers.com.com"> 
+                      <Link className="project" target="blank" to="https://karashijewelers.com"> 
             <p className='projectTitle'>Karashi Jewelers</p>
             <p className="projectYear">2025</p>
             </Link>
