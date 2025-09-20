@@ -32,27 +32,28 @@ const Projects = () => {
 
 // </section>
 
+    const projects = [
+    {title: "HR Management dashboard", url: "https://humanline-dashboard-app.vercel.app/", year: "2025"},
+    {title: "Karashi Jewelers Blog", url: "https://karashijewelers.com", year: "2025"},
+    {title: "Zinary Website", url: "https://www.zinary.com", year: "2025"},
+    {title: "Automedsys Website", url: "https://automedsys-clone.vercel.app/", year: "2025"},
+    {title: "Audiophile E-commerce", url: "https://audiophile-ecommerce-247.vercel.app/", year: "2023"},
+    ]
+
  <section className='mobileProjectsSection '>
 
 <div className="container">
     <div className="sectionHeading projectSectionHeading text__reveal">Projects</div>
         <div className="projects">
-                      <Link className="project" target="blank" to="https://karashijewelers.com"> 
-            <p className='projectTitle'>Karashi Jewelers</p>
-            <p className="projectYear">2025</p>
-            </Link>
-            <Link className="project" target="blank" to="https://www.zinary.com"> 
-            <p className='projectTitle'>Zinary Website</p>
-            <p className="projectYear">2025</p>
-            </Link>
-            <Link className="project" target="blank" to="https://automedsys-clone.vercel.app/"> 
-            <p className='projectTitle'>Automedsys Website</p>
-            <p className="projectYear">2025</p>
-            </Link>
-             <Link className="project" target="blank" to="https://audiophile-ecommerce-247.vercel.app/"> 
-            <p className='projectTitle'>E-Commerce Website</p>
-            <p className="projectYear">2023</p>
-            </Link>
+          {projects.map((project, i)=>{
+            return (
+              <Link key={i} className="project" target="blank" to={project.url}> 
+              <p className='projectTitle'>{project.title}</p>
+              <p className="projectYear">{project.year}</p>
+              </Link>
+                  )
+          })}
+           
             
         </div>
 
